@@ -1,0 +1,17 @@
+﻿@page
+@model OstatnioSzukane
+@{
+    ViewData["Title"] = "Ostatnio szukane";
+}
+
+
+@foreach(var var in Model.People)
+ {
+    <p>
+        @var.Name, @var.Surname,  @var.Year, @var.IsLeap(var.Year).
+
+    </p>
+
+ }
+
+
